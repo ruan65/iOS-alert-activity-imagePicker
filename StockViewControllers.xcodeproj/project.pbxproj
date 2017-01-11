@@ -12,6 +12,8 @@
 		004E67F71E22F5720030A0CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004E67F51E22F5720030A0CF /* Main.storyboard */; };
 		004E67F91E22F5720030A0CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004E67F81E22F5720030A0CF /* Assets.xcassets */; };
 		004E67FC1E22F5720030A0CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004E67FA1E22F5720030A0CF /* LaunchScreen.storyboard */; };
+		004F89301E24EF3E006A6B72 /* RochamboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F892F1E24EF3E006A6B72 /* RochamboViewController.swift */; };
+		004F89321E24F547006A6B72 /* GameResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F89311E24F547006A6B72 /* GameResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		004E67F81E22F5720030A0CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		004E67FB1E22F5720030A0CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		004E67FD1E22F5720030A0CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		004F892F1E24EF3E006A6B72 /* RochamboViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RochamboViewController.swift; sourceTree = "<group>"; };
+		004F89311E24F547006A6B72 /* GameResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				004E67F81E22F5720030A0CF /* Assets.xcassets */,
 				004E67FA1E22F5720030A0CF /* LaunchScreen.storyboard */,
 				004E67FD1E22F5720030A0CF /* Info.plist */,
+				004F892F1E24EF3E006A6B72 /* RochamboViewController.swift */,
+				004F89311E24F547006A6B72 /* GameResultViewController.swift */,
 			);
 			path = StockViewControllers;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				004E67F41E22F5720030A0CF /* ViewController.swift in Sources */,
+				004F89321E24F547006A6B72 /* GameResultViewController.swift in Sources */,
 				004E67F21E22F5720030A0CF /* AppDelegate.swift in Sources */,
+				004F89301E24EF3E006A6B72 /* RochamboViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +310,7 @@
 				004E68021E22F5720030A0CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

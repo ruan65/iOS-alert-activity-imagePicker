@@ -26,8 +26,9 @@ class ViewController: UIViewController {
         let activityController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
         
         present(activityController,
-                animated: true,
-                completion: nil)
+                animated: true) {
+                    
+        }
     }
     
     @IBAction func showAlert(_ sender: UIButton) {
