@@ -22,25 +22,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="CFZ-Xf-hod">
-                                <rect key="frame" x="122.5" y="198.5" width="130" height="270"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="CFZ-Xf-hod">
+                                <rect key="frame" x="122.5" y="168.5" width="130" height="330"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoV-5A-WAX">
+                                        <rect key="frame" x="0.0" y="0.0" width="71" height="30"/>
+                                        <state key="normal" title="Text fields"/>
+                                        <connections>
+                                            <segue destination="2vj-ny-85S" kind="show" id="mGH-rT-N0i"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="si6-2W-dfk" userLabel="Show Image Picker">
-                                        <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
+                                        <rect key="frame" x="0.0" y="60" width="130" height="30"/>
                                         <state key="normal" title="Show Image Picker"/>
                                         <connections>
                                             <action selector="openImagePicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5KI-B7-P2e"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOL-hp-ebu">
-                                        <rect key="frame" x="0.0" y="80" width="93" height="30"/>
+                                        <rect key="frame" x="0.0" y="120" width="93" height="30"/>
                                         <state key="normal" title="Show Activity"/>
                                         <connections>
                                             <action selector="showActivity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Gr-Fd-ZpP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZO-ev-XqY">
-                                        <rect key="frame" x="0.0" y="160" width="75" height="30"/>
+                                        <rect key="frame" x="0.0" y="180" width="75" height="30"/>
                                         <state key="normal" title="Show Alert"/>
                                         <connections>
                                             <action selector="showAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="it9-pg-xtb"/>
@@ -51,6 +58,13 @@
                                         <state key="normal" title="Roshambo"/>
                                         <connections>
                                             <segue destination="WFN-F0-Ggq" kind="show" id="fs6-eL-3kk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmv-y5-PKH">
+                                        <rect key="frame" x="0.0" y="300" width="94" height="30"/>
+                                        <state key="normal" title="Pick an photo"/>
+                                        <connections>
+                                            <segue destination="CFf-xD-FRT" kind="show" id="jQm-2E-qZZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -118,6 +132,104 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5v-XW-3od" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="994.5" y="-31.5"/>
+        </scene>
+        <!--Text Fields View Controller-->
+        <scene sceneID="mpN-ZT-cjj">
+            <objects>
+                <viewController id="2vj-ny-85S" customClass="TextFieldsViewController" customModule="StockViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4d0-zH-dCD"/>
+                        <viewControllerLayoutGuide type="bottom" id="0hL-nh-A6H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ugl-e7-xpu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="du3-Nf-2Pv">
+                                <rect key="frame" x="16" y="114" width="343" height="150"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tss-yf-CdI" userLabel="Random Text Color">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P8W-Xi-AeJ">
+                                        <rect key="frame" x="0.0" y="60" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kjy-ug-59t">
+                                        <rect key="frame" x="0.0" y="120" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="du3-Nf-2Pv" secondAttribute="trailing" id="3bL-Th-rJi"/>
+                            <constraint firstItem="du3-Nf-2Pv" firstAttribute="leading" secondItem="ugl-e7-xpu" secondAttribute="leadingMargin" id="FhG-ly-EA3"/>
+                            <constraint firstItem="du3-Nf-2Pv" firstAttribute="top" secondItem="4d0-zH-dCD" secondAttribute="bottom" constant="50" id="t0E-H2-Xyj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="randomTextColor" destination="tss-yf-CdI" id="ga1-3U-Dlw"/>
+                        <outlet property="secondTextField" destination="P8W-Xi-AeJ" id="ypa-Zy-fCk"/>
+                        <outlet property="thirdTextField" destination="Kjy-ug-59t" id="R75-D6-pMg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FSM-ML-8dS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-234" y="752"/>
+        </scene>
+        <!--Pick Image View Controller-->
+        <scene sceneID="DY4-WO-3WN">
+            <objects>
+                <viewController id="CFf-xD-FRT" customClass="PickImageViewController" customModule="StockViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rq6-wW-Fmb"/>
+                        <viewControllerLayoutGuide type="bottom" id="HQe-u1-58h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xge-jx-Mrf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6Z-IP-Qik">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="pick" id="Y4u-wE-Y8x">
+                                        <connections>
+                                            <action selector="pickPhotoFromLibrary:" destination="CFf-xD-FRT" id="jsn-i5-Dau"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2m0-HW-3z9">
+                                <rect key="frame" x="-8" y="64" width="383" height="559"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2m0-HW-3z9" secondAttribute="trailing" id="2Gh-MT-dFo"/>
+                            <constraint firstItem="q6Z-IP-Qik" firstAttribute="leading" secondItem="Xge-jx-Mrf" secondAttribute="leading" id="JAf-jP-gGO"/>
+                            <constraint firstItem="HQe-u1-58h" firstAttribute="top" secondItem="q6Z-IP-Qik" secondAttribute="bottom" id="MaX-6y-ZCx"/>
+                            <constraint firstItem="2m0-HW-3z9" firstAttribute="leadingMargin" secondItem="Xge-jx-Mrf" secondAttribute="leading" id="NWA-di-5nh"/>
+                            <constraint firstItem="2m0-HW-3z9" firstAttribute="top" secondItem="Rq6-wW-Fmb" secondAttribute="bottom" id="VQ4-8G-VFs"/>
+                            <constraint firstAttribute="trailing" secondItem="q6Z-IP-Qik" secondAttribute="trailing" id="iFt-Pq-JUY"/>
+                            <constraint firstItem="q6Z-IP-Qik" firstAttribute="top" secondItem="2m0-HW-3z9" secondAttribute="bottom" id="rsi-XP-cjU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ivPickedPhoto" destination="2m0-HW-3z9" id="eUW-cq-gfh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="taW-9F-8m3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="530" y="752"/>
         </scene>
         <!--Game Result View Controller-->
         <scene sceneID="Arb-88-okO">
@@ -204,7 +316,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vtr-Sy-nIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2305" y="112"/>
+            <point key="canvasLocation" x="1694" y="-31"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Av9-nb-5FQ">
@@ -231,6 +343,6 @@
         <image name="scissors" width="75" height="65"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IKe-H1-tW3"/>
+        <segue reference="fs6-eL-3kk"/>
     </inferredMetricsTieBreakers>
 </document>

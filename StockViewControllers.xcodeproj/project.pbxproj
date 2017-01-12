@@ -14,6 +14,10 @@
 		004E67FC1E22F5720030A0CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004E67FA1E22F5720030A0CF /* LaunchScreen.storyboard */; };
 		004F89301E24EF3E006A6B72 /* RochamboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F892F1E24EF3E006A6B72 /* RochamboViewController.swift */; };
 		004F89321E24F547006A6B72 /* GameResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F89311E24F547006A6B72 /* GameResultViewController.swift */; };
+		004F89351E2649A3006A6B72 /* TextFieldFirstDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F89341E2649A3006A6B72 /* TextFieldFirstDelegate.swift */; };
+		004F89371E264EE1006A6B72 /* TextFieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F89361E264EE1006A6B72 /* TextFieldsViewController.swift */; };
+		004F89391E267147006A6B72 /* TextFieldSecondDelegat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F89381E267147006A6B72 /* TextFieldSecondDelegat.swift */; };
+		004F893B1E2778A0006A6B72 /* PickImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F893A1E2778A0006A6B72 /* PickImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		004E67FD1E22F5720030A0CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		004F892F1E24EF3E006A6B72 /* RochamboViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RochamboViewController.swift; sourceTree = "<group>"; };
 		004F89311E24F547006A6B72 /* GameResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameResultViewController.swift; sourceTree = "<group>"; };
+		004F89341E2649A3006A6B72 /* TextFieldFirstDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldFirstDelegate.swift; sourceTree = "<group>"; };
+		004F89361E264EE1006A6B72 /* TextFieldsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsViewController.swift; sourceTree = "<group>"; };
+		004F89381E267147006A6B72 /* TextFieldSecondDelegat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldSecondDelegat.swift; sourceTree = "<group>"; };
+		004F893A1E2778A0006A6B72 /* PickImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		004E67F01E22F5720030A0CF /* StockViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				004F89331E26495B006A6B72 /* Delegates */,
 				004E67F11E22F5720030A0CF /* AppDelegate.swift */,
 				004E67F31E22F5720030A0CF /* ViewController.swift */,
 				004E67F51E22F5720030A0CF /* Main.storyboard */,
@@ -66,8 +75,19 @@
 				004E67FD1E22F5720030A0CF /* Info.plist */,
 				004F892F1E24EF3E006A6B72 /* RochamboViewController.swift */,
 				004F89311E24F547006A6B72 /* GameResultViewController.swift */,
+				004F89361E264EE1006A6B72 /* TextFieldsViewController.swift */,
+				004F893A1E2778A0006A6B72 /* PickImageViewController.swift */,
 			);
 			path = StockViewControllers;
+			sourceTree = "<group>";
+		};
+		004F89331E26495B006A6B72 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				004F89341E2649A3006A6B72 /* TextFieldFirstDelegate.swift */,
+				004F89381E267147006A6B72 /* TextFieldSecondDelegat.swift */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +163,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				004F89371E264EE1006A6B72 /* TextFieldsViewController.swift in Sources */,
+				004F893B1E2778A0006A6B72 /* PickImageViewController.swift in Sources */,
 				004E67F41E22F5720030A0CF /* ViewController.swift in Sources */,
+				004F89351E2649A3006A6B72 /* TextFieldFirstDelegate.swift in Sources */,
 				004F89321E24F547006A6B72 /* GameResultViewController.swift in Sources */,
 				004E67F21E22F5720030A0CF /* AppDelegate.swift in Sources */,
+				004F89391E267147006A6B72 /* TextFieldSecondDelegat.swift in Sources */,
 				004F89301E24EF3E006A6B72 /* RochamboViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
