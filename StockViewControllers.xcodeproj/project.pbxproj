@@ -18,6 +18,7 @@
 		004F89371E264EE1006A6B72 /* TextFieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F89361E264EE1006A6B72 /* TextFieldsViewController.swift */; };
 		004F89391E267147006A6B72 /* TextFieldSecondDelegat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F89381E267147006A6B72 /* TextFieldSecondDelegat.swift */; };
 		004F893B1E2778A0006A6B72 /* PickImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F893A1E2778A0006A6B72 /* PickImageViewController.swift */; };
+		004F893F1E27B2E5006A6B72 /* DelegateMemeTf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004F893E1E27B2E5006A6B72 /* DelegateMemeTf.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		004F89361E264EE1006A6B72 /* TextFieldsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsViewController.swift; sourceTree = "<group>"; };
 		004F89381E267147006A6B72 /* TextFieldSecondDelegat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldSecondDelegat.swift; sourceTree = "<group>"; };
 		004F893A1E2778A0006A6B72 /* PickImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickImageViewController.swift; sourceTree = "<group>"; };
+		004F893E1E27B2E5006A6B72 /* DelegateMemeTf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateMemeTf.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				004F89341E2649A3006A6B72 /* TextFieldFirstDelegate.swift */,
 				004F89381E267147006A6B72 /* TextFieldSecondDelegat.swift */,
+				004F893E1E27B2E5006A6B72 /* DelegateMemeTf.swift */,
 			);
 			name = Delegates;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				004F89371E264EE1006A6B72 /* TextFieldsViewController.swift in Sources */,
 				004F893B1E2778A0006A6B72 /* PickImageViewController.swift in Sources */,
 				004E67F41E22F5720030A0CF /* ViewController.swift in Sources */,
+				004F893F1E27B2E5006A6B72 /* DelegateMemeTf.swift in Sources */,
 				004F89351E2649A3006A6B72 /* TextFieldFirstDelegate.swift in Sources */,
 				004F89321E24F547006A6B72 /* GameResultViewController.swift in Sources */,
 				004E67F21E22F5720030A0CF /* AppDelegate.swift in Sources */,

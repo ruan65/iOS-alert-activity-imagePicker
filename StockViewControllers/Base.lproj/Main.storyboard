@@ -201,30 +201,54 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6Z-IP-Qik">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="pick" id="Y4u-wE-Y8x">
+                                    <barButtonItem title="Gallery" id="Y4u-wE-Y8x">
                                         <connections>
                                             <action selector="pickPhotoFromLibrary:" destination="CFf-xD-FRT" id="jsn-i5-Dau"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem title="Camera" id="1oF-Pe-gdi">
+                                        <connections>
+                                            <action selector="takePhoto:" destination="CFf-xD-FRT" id="kfq-Fu-EeO"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2m0-HW-3z9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2m0-HW-3z9">
                                 <rect key="frame" x="-8" y="64" width="383" height="559"/>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="72" placeholderIntrinsicHeight="17" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Top meme" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AZg-cR-vZK">
+                                <rect key="frame" x="151.5" y="164" width="72" height="17"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bottom meme" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nc3-F2-1c3">
+                                <rect key="frame" x="140" y="506" width="95" height="17"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="2m0-HW-3z9" secondAttribute="trailing" id="2Gh-MT-dFo"/>
+                            <constraint firstItem="q6Z-IP-Qik" firstAttribute="top" secondItem="Nc3-F2-1c3" secondAttribute="bottom" constant="100" id="2ub-Q4-QxC"/>
+                            <constraint firstItem="AZg-cR-vZK" firstAttribute="centerX" secondItem="Xge-jx-Mrf" secondAttribute="centerX" id="5QH-FB-AuC"/>
                             <constraint firstItem="q6Z-IP-Qik" firstAttribute="leading" secondItem="Xge-jx-Mrf" secondAttribute="leading" id="JAf-jP-gGO"/>
                             <constraint firstItem="HQe-u1-58h" firstAttribute="top" secondItem="q6Z-IP-Qik" secondAttribute="bottom" id="MaX-6y-ZCx"/>
                             <constraint firstItem="2m0-HW-3z9" firstAttribute="leadingMargin" secondItem="Xge-jx-Mrf" secondAttribute="leading" id="NWA-di-5nh"/>
                             <constraint firstItem="2m0-HW-3z9" firstAttribute="top" secondItem="Rq6-wW-Fmb" secondAttribute="bottom" id="VQ4-8G-VFs"/>
+                            <constraint firstItem="Nc3-F2-1c3" firstAttribute="centerX" secondItem="Xge-jx-Mrf" secondAttribute="centerX" id="aLr-hD-Gsd"/>
                             <constraint firstAttribute="trailing" secondItem="q6Z-IP-Qik" secondAttribute="trailing" id="iFt-Pq-JUY"/>
                             <constraint firstItem="q6Z-IP-Qik" firstAttribute="top" secondItem="2m0-HW-3z9" secondAttribute="bottom" id="rsi-XP-cjU"/>
+                            <constraint firstItem="AZg-cR-vZK" firstAttribute="top" secondItem="Rq6-wW-Fmb" secondAttribute="bottom" constant="100" id="x4O-cc-BE9"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cameraButton" destination="1oF-Pe-gdi" id="eCD-sg-mFi"/>
                         <outlet property="ivPickedPhoto" destination="2m0-HW-3z9" id="eUW-cq-gfh"/>
+                        <outlet property="tfBottom" destination="Nc3-F2-1c3" id="7nY-pJ-hmf"/>
+                        <outlet property="tfTop" destination="AZg-cR-vZK" id="eKS-YZ-dFz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="taW-9F-8m3" userLabel="First Responder" sceneMemberID="firstResponder"/>
